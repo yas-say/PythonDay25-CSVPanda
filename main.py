@@ -23,3 +23,17 @@ import pandas
 data = pandas.read_csv("weather_data.csv")
 print(data["temp"])
 
+
+data_list = data["temp"].to_list()
+print(data_list)
+
+# ctr = 0
+# sum = 0
+# for _ in data_list:
+#     sum += _
+#     ctr += 1
+#
+# print(f"Avergae is {sum/ctr}")
+
+print(data["temp"].mean())
+print(data["temp"].max())
